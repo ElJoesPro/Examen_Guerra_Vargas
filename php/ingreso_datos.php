@@ -11,9 +11,20 @@ $klm = $_POST['klm'];
 $man_preventivo = $_POST['man_preventivo'];
 $man_correctivo = $_POST['man_correctivo'];
 $observaciones = $_POST['observaciones'];
-$aceite = $_POST['aceite'];
-$frenos = $_POST['frenos'];
-$llantas = $_POST['llantas'];
+
+$opciones_mant_pren = $_POST["man_preventivo"];
+    if($opciones_mant == "Preventivo")
+    {
+    //echo("You chose the first button. Good choice. :D");
+    $tipo = 'Preventivo'
+    }
+
+    $opciones_mant_corr = $_POST["man_correctivo"]; 
+    if($opciones_mant_corr == "Correctivo")
+    {
+    //echo("You chose the first button. Good choice. :D");
+    $tipo = 'Correctivo'
+    }
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
