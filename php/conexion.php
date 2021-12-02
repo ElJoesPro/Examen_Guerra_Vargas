@@ -1,3 +1,10 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="php_stilos">
 <?php
 $servername = "localhost";
 $username = "prueba";
@@ -48,3 +55,7 @@ try {
   $conn1 = null;
 
 ?>
+</div>
+<a class="btn btn-primary" href="index.html" role="button" class="btn btn-light">Pagina Principal</a>
+</body>
+</html>

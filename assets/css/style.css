@@ -40,6 +40,21 @@ span.text-muted{
     color: white;
 }
 
+div.php_stilos{
+    --color-dark: #1b1b1b;
+--color-light: #ffffff;
+--color-gold: #c7b8a5;
+}
 
+h1{
+    text-align: center;
+}
+
+div.formulario, div.tabla_stilos{
+    padding: 100px;
+}
+div.tit_tabla{
+    border: 50px;
+}
 
 
