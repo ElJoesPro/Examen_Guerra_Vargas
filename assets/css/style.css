@@ -1,3 +1,7 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
 :root {
 --color-dark: #1b1b1b;
 --color-light: #ffffff;
@@ -5,7 +9,6 @@
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
     font-weight: 200;
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -53,8 +56,8 @@ h1{
 div.formulario, div.tabla_stilos{
     padding: 100px;
 }
-div.tit_tabla{
-    border: 50px;
+div.php_stilos{
+    padding: 60px;
 }
 
 

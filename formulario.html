@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Mantenimiento DJ</title>
+        <meta charset="UTF-8">
+        <meta name ="title" content="Examen-Guerra y Vargas">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+         <!--Formulario-->
+         <div class="formulario">
+            <form>
+                <h3><strong>FORMULARIO</strong></h3>
+
+                <div class="row g-3">
+                    <div class="col">
+                        <label class="form-label">Ingrese la fecha</label>
+                        <input type="date" class="form-control" name="date"  required>
+                    </div>
+                    <div class="col">
+                        <label  class="form-label">Nombre del taller</label>
+                        <input type="text" class="form-control" aria-label="First name"  name="nombre_taller" required>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col">
+                        <label class="form-label">Ingrese el costo</label>
+                        <input type="text" class="form-control" aria-label="First name" name="costo" required>
+                    </div>
+                    <div class="col">
+                        <label  class="form-label">Ingrese el kilometraje</label>
+                        <input type="text" class="form-control" aria-label="First name" name="klm" required>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="man_preventivo" onclick="opciones_mant()">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Mantenimiento preventivo
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="man_correctivo" onclick="quitar_mant()">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Mantenimiento correctivo
+                            </label>
+                          </div>
+                    </div>
+                    <div id="tipos_mant"></div>
+                    <textarea class="form-control" name="textarea" rows="10" cols="50" placeholder="Observaciones" name="observaciones" required></textarea>
+                    <!--<div class="row g-3">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="aceite" disabled>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Cambio de aceite
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="frenos" disabled>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Cambio de frenos
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="llantas" disabled>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Cambio de llantas
+                                </label>
+                              </div>
+                        </div>
+                    </div>-->   
+                    <div>
+                        <br><button class="btn btn-success" name="guardar" type="submit">Guardar</button>
+                    </div>
+                    <div>
+                        <br><a class="btn btn-primary" href="aplicacion.html" role="button" class="btn btn-light">Aplicacion</a>
+                    </div>
+                    
+                </div>
+                    
+            </form>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="assets/js/form.js"></script>
+</html>

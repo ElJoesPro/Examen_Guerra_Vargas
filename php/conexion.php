@@ -1,9 +1,12 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+<h1 class="h1">Instalacion de la base de datos</h1>
+
 <div class="php_stilos">
 <?php
 $servername = "localhost";
@@ -55,7 +58,8 @@ try {
   $conn1 = null;
 
 ?>
+<br><br><a class="btn btn-primary" href="../index.html" role="button" class="btn btn-light">Pagina Principal</a>
 </div>
-<a class="btn btn-primary" href="index.html" role="button" class="btn btn-light">Pagina Principal</a>
+
 </body>
 </html>
